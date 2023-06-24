@@ -1,0 +1,123 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    background-color: rgb(112, 110, 110);
+    box-shadow: 0 4px 6px rgb(158, 155, 155);
+    margin-bottom: 10px;
+    position: fixed;
+    z-index: 6;
+}
+
+.left{
+    flex: 1;
+    font-family: 'Titan One', cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.text1{
+    border-bottom: 2px solid white;
+}
+.text1:hover{
+    color: rgb(247, 247, 73);
+}
+.img{
+    width: 15%;
+    margin: 0px 20px 0px 10px;
+}
+
+.center{
+    flex: 2;
+    display: flex;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+/* .cir{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d4d1d1;
+    margin: 0px 10px;
+} */
+
+.cir{
+    margin: 0 10px;
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 13px solid transparent;
+    border-bottom: 10px solid rgb(248, 248, 20);
+    border-left: 13px solid transparent;
+    transform: rotate(35deg);
+}
+
+.cir:before{
+    border-bottom: 8px solid rgb(248, 248, 20);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -6px;
+    left: -9px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+.cir::after{
+    position: absolute;
+    display: block;
+    border-right: 13px solid transparent;
+    border-bottom: 10px solid rgb(248, 248, 20);
+    border-left: 13px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+    width: 0;
+    height: 0;
+    top: -1px;
+    left: -11px;
+}
+
+.text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px; 
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    border: 2px rgb(247, 247, 88) solid;
+    padding: 7px 20px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.login:hover{
+    filter: brightness(90%);
+}
+
+.anh{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}

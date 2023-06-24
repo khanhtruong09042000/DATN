@@ -1,0 +1,65 @@
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(191, 196, 196);
+    margin-top: 40px;
+}
+
+.left1{
+    display: flex;
+    flex: 1;
+}
+
+.containerFooter{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2{
+    width: 15%;
+    margin: 0px 20px 0px 10px;
+}
+.text2{
+    font-family: 'Titan One', cursive;
+    font-size: 40px;
+}
+
+.right1{
+    flex: 2;
+    margin-top: 30px;
+    border-left: 2px solid white;
+    padding-left: 30px;
+}
+
+.text3{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.wapper{
+    display: flex;
+    margin-left: 50px;
+}
+
+.iconContainer{
+    margin: 10px 50px ;
+}
+
+.icon{
+    display: flex;
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0px; 
+    cursor: pointer;
+}
+
+.desc1{
+    font-size: 15px;
+    font-family: 'Titan One', cursive;
+    margin-left: 10px;
+}
