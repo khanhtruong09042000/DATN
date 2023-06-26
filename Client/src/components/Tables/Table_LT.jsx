@@ -102,7 +102,7 @@ export default function Table_LT() {
   const handleOpen = (id) =>
     {
       
-      fetch(`http://localhost:5000/schedules/${id}`)
+      fetch(`https://datn-production.up.railway.app/schedules/${id}`)
       .then(resposne=> resposne.json())
       .then(res=>setCT(res))
       setOpen(true);
