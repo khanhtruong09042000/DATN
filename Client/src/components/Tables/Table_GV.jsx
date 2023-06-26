@@ -84,7 +84,7 @@ export default function Table_GV() {
   const handleOpen = (id) =>
     {
       
-      fetch(`http://localhost:5000/teachers/${id}`)
+      fetch(`https://datn-production.up.railway.app/teachers/${id}`)
       .then(resposne=> resposne.json())
       .then(res=>setCT(res))
       setOpen(true);
