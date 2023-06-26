@@ -78,7 +78,7 @@ export default function Table_LH() {
   const handleOpen = (id) =>
     {
       
-      fetch(`http://localhost:5000/classes/${id}`)
+      fetch(`https://datn-production.up.railway.app/classes/${id}`)
       .then(resposne=> resposne.json())
       .then(res=>setCT(res))
       setOpen(true);
