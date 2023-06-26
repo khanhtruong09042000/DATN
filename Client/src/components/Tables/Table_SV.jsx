@@ -98,7 +98,7 @@ export default function Table_SV({}) {
 const handleOpen = (id) =>
     {
       
-      fetch(`http://localhost:5000/students/${id}`)
+      fetch(`https://datn-production.up.railway.app/students/${id}`)
       .then(resposne=> resposne.json())
       .then(res=>setCT(res))
       setOpen(true);
