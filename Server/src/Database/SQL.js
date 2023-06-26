@@ -1,11 +1,11 @@
 const mySQL = require('mysql2')
 
 var dbSQL = mySQL.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '09042000', 
-    database: 'datn',
-    port: '8000'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS, 
+    database: process.env.DB_DATA,
+    port: process.env.DB_PORT
 })
 dbSQL.connect((err)=>{
     if(err){
